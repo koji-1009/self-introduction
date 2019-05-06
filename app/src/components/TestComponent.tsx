@@ -1,4 +1,6 @@
-import * as React from "react";
+import React from "react";
+import { useState } from "react";
+
 import Button from '@material-ui/core/Button';
 import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import withStyles, { WithStyles, StyleRules } from "@material-ui/core/styles/withStyles";
@@ -23,40 +25,32 @@ interface Props extends WithStyles<typeof styles> {
     title?: string;
 }
 
-interface State {
-    readonly counter: number;
-}
-
-class TestComponent extends React.Component<Props, State> {
-    readonly state: State = {
-        counter: 0
-    };
-
-    private _onIncrement = () => {
-        this.setState(prevState => ({
-            counter: prevState.counter + 1
-        }));
-    };
+class TestComponent extends React.Component<Props> {
 
     public render() {
         const { classes, title } = this.props;
-        const { counter } = this.state;
         return (
             <div className={classes.root}>
                 <div className={classes.header}>
                     {title || "My Third TS Component"}
                 </div>
                 <div>
-                    <span className={classes.counter}>{counter}</span>
-                </div>
-                <div>
-                    <Button variant="contained" color="primary" onClick={this._onIncrement}>
-                        Increment
-          </Button>
+                    <CounterButton />
                 </div>
             </div>
         );
     }
+}
+
+function CounterButton() {
+    const [count, setCount] = useState(0);
+
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <Button variant="contained" color="primary" onClick={() => setCount(count + 1)}>Click me</Button>
+        </div>
+    );
 }
 
 export default withStyles(styles)(TestComponent);
