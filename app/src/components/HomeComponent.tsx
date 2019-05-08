@@ -17,7 +17,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems, secondaryListItems } from './HomeListItems';
 
-import logo from '../logo.svg';
+import DemoComponent from './DemoComponent'
 
 const drawerWidth = 240;
 
@@ -166,20 +166,7 @@ class HomeComponent extends React.Component<Props> {
                 </Drawer>
                 <main className={classes.content}>
                     <div className={classes.appBarSpacer} />
-                    <div>
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <p>
-                            Edit <code>src/App.tsx</code> and save to reload.
-                        </p>
-                        <a
-                            className="App-link"
-                            href="https://reactjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Learn React
-                        </a>
-                    </div>
+                    <DemoComponent { ...classes }/>
                 </main>
             </div>
         );
