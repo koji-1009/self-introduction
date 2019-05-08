@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import TestComponent from './components/TestComponent'
+import HomeComponent from './components/HomeComponent'
 
 import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import withStyles, { WithStyles, StyleRules } from "@material-ui/core/styles/withStyles";
@@ -14,7 +13,7 @@ type Props = WithStyles<typeof styles>;
 const App: React.FC = () => {
   return (
     <div>
-      <TestComponent title="React TypeScript Material-UI Example" />
+      <HomeComponent />
     </div>
   );
 }
