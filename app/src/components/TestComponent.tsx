@@ -5,33 +5,32 @@ import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import withStyles, { WithStyles, StyleRules } from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
 
-const styles = (theme: Theme): StyleRules =>
-    createStyles({
-        root: {
-            textAlign: "center"
-        },
-        header: {
-            backgroundColor: theme.palette.primary.main,
-            boxShadow: theme.shadows[2],
-            padding: theme.spacing.unit * 2,
-        },
-        counter: {
-            fontSize: 60
-        },
-    });
+const styles = (theme: Theme): StyleRules => createStyles({
+    root: {
+        textAlign: "center"
+    },
+    header: {
+        backgroundColor: theme.palette.primary.main,
+        boxShadow: theme.shadows[2],
+        padding: theme.spacing.unit * 2,
+    },
+    counter: {
+        fontSize: 60
+    },
+});
 
-interface Props extends WithStyles<typeof styles> {
+interface TestProps extends WithStyles<typeof styles> {
     title?: string;
 }
 
-class TestComponent extends React.Component<Props> {
+class TestComponent extends React.Component<TestProps> {
 
     public render() {
         const { classes, title } = this.props;
         return (
             <div className={classes.root}>
                 <div className={classes.header}>
-                    {title || "My Third TS Component"}
+                    {title || "My Demo TS Component"}
                 </div>
                 <div>
                     <CounterButton />
