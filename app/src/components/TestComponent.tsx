@@ -20,17 +20,16 @@ const styles = (theme: Theme): StyleRules => createStyles({
 });
 
 interface TestProps extends WithStyles<typeof styles> {
-    title?: string;
 }
 
 class TestComponent extends React.Component<TestProps> {
 
     public render() {
-        const { classes, title } = this.props;
+        const { classes } = this.props;
         return (
             <div className={classes.root}>
                 <div className={classes.header}>
-                    {title || "My Demo TS Component"}
+                    {"My Test TS Component"}
                 </div>
                 <div>
                     <CounterButton />
