@@ -27,7 +27,7 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 import DemoComponent from './components/DemoComponent'
-import TestComponent from './components/TestComponent'
+import WorkComponent from './components/WorksComponent'
 
 const drawerWidth = 240;
 
@@ -182,12 +182,12 @@ class App extends React.Component<Props> {
                   <ListItemText primary="Home" />
                 </ListItem>
               </Link>
-              <Link to="/test">
+              <Link to="/work">
                 <ListItem button>
                   <ListItemIcon>
                     <ShoppingCartIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Test" />
+                  <ListItemText primary="Work" />
                 </ListItem>
               </Link>
             </List>
@@ -197,7 +197,7 @@ class App extends React.Component<Props> {
             <div>
               <Route path='/' exact component={DemoComponent} />
               <Route path='/home' component={DemoComponent} />
-              <Route path='/test' component={TestComponent} />
+              <Route path='/work' component={WorkComponent} />
             </div>
           </main>
         </BrowserRouter>
