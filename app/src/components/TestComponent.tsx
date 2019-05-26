@@ -12,7 +12,7 @@ const styles = (theme: Theme): StyleRules => createStyles({
     header: {
         backgroundColor: theme.palette.primary.main,
         boxShadow: theme.shadows[2],
-        padding: theme.spacing.unit * 2,
+        padding: theme.spacing(2)
     },
     counter: {
         fontSize: 60
