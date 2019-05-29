@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 import classNames from "classnames"
 
 import { Theme } from "@material-ui/core/styles/createMuiTheme";
-import withStyles, { WithStyles, StyleRules } from "@material-ui/core/styles/withStyles";
+import { withStyles, WithStyles, createStyles } from "@material-ui/styles";
 import withRoot from './withRoot';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -29,40 +29,38 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import DemoComponent from './components/DemoComponent'
 import WorkComponent from './components/WorksComponent'
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
-const styles = (theme: Theme): StyleRules => ({
+const styles = ({ palette, spacing, mixins, transitions, breakpoints, zIndex }: Theme) => createStyles({
   root: {
     display: 'flex',
+    backgroundColor: palette.background.default,
+    color: palette.primary.main,
   },
-  toolbar: {
-    paddingRight: 24, // keep right padding when drawer closed
-  },
+  toolbar: {},
   toolbarIcon: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    padding: '0 8px',
-    ...theme.mixins.toolbar,
   },
   appBar: {
-    zIndex: theme.zIndex.drawer + 1,
-    transition: theme.transitions.create(['width', 'margin'], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
+    zIndex: zIndex.drawer + 1,
+    transition: transitions.create(['width', 'margin'], {
+      easing: transitions.easing.sharp,
+      duration: transitions.duration.leavingScreen,
     }),
   },
   appBarShift: {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['width', 'margin'], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
+    transition: transitions.create(['width', 'margin'], {
+      easing: transitions.easing.sharp,
+      duration: transitions.duration.enteringScreen,
     }),
   },
   menuButton: {
-    marginLeft: 12,
-    marginRight: 36,
+    marginLeft: spacing(1),
+    marginRight: spacing(1),
   },
   menuButtonHidden: {
     display: 'none',
@@ -74,37 +72,28 @@ const styles = (theme: Theme): StyleRules => ({
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
-    transition: theme.transitions.create('width', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
+    transition: transitions.create('width', {
+      easing: transitions.easing.sharp,
+      duration: transitions.duration.enteringScreen,
     }),
   },
   drawerPaperClose: {
     overflowX: 'hidden',
-    transition: theme.transitions.create('width', {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
+    transition: transitions.create('width', {
+      easing: transitions.easing.sharp,
+      duration: transitions.duration.leavingScreen,
     }),
-    width: theme.spacing(7),
-    [theme.breakpoints.up('sm')]: {
-      width: theme.spacing(9),
+    width: spacing(7),
+    [breakpoints.up('sm')]: {
+      width: spacing(9),
     },
   },
-  appBarSpacer: theme.mixins.toolbar,
+  appBarSpacer: mixins.toolbar,
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
     height: '100vh',
+    padding: spacing(2),
     overflow: 'auto',
-  },
-  chartContainer: {
-    marginLeft: -22,
-  },
-  tableContainer: {
-    height: 320,
-  },
-  h5: {
-    marginBottom: theme.spacing(2),
   },
 });
 
@@ -133,10 +122,7 @@ class App extends React.Component<Props> {
           basename={"self-introduction-react"}
         >
           <CssBaseline />
-          <AppBar
-            position="absolute"
-            className={classNames(classes.appBar, this.state.open && classes.appBarShift)}
-          >
+          <AppBar className={classNames(classes.appBar, this.state.open && classes.appBarShift)} >
             <Toolbar disableGutters={!this.state.open} className={classes.toolbar}>
               <IconButton
                 color="inherit"
@@ -151,13 +137,13 @@ class App extends React.Component<Props> {
               </IconButton>
               <Typography
                 component="h1"
-                variant="h6"
+                variant="h5"
                 color="inherit"
                 noWrap
                 className={classes.title}
               >
                 Self Introduction
-                        </Typography>
+              </Typography>
             </Toolbar>
           </AppBar>
           <Drawer
@@ -179,7 +165,7 @@ class App extends React.Component<Props> {
                   <ListItemIcon>
                     <DashboardIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Home" />
+                  <ListItemText primary="Profile" />
                 </ListItem>
               </Link>
               <Link to="/work">
