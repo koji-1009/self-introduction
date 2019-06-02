@@ -26,8 +26,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
-import DemoComponent from './components/DemoComponent'
 import WorkComponent from './components/WorksComponent'
+import ProfileComponent from './components/ProfileComponent';
 
 const drawerWidth = 200;
 
@@ -181,8 +181,8 @@ class App extends React.Component<Props> {
           <main className={classes.content}>
             <div className={classes.appBarSpacer} />
             <div>
-              <Route path='/' exact component={DemoComponent} />
-              <Route path='/home' component={DemoComponent} />
+              <Route path='/' exact component={ProfileComponent} />
+              <Route path='/home' component={ProfileComponent} />
               <Route path='/work' component={WorkComponent} />
             </div>
           </main>

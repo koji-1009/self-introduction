@@ -7,10 +7,10 @@ import createStyles from "@material-ui/core/styles/createStyles";
 const styles = (theme: Theme): StyleRules => createStyles({
 });
 
-interface WorkProps extends WithStyles<typeof styles> {
+interface Props extends WithStyles<typeof styles> {
 }
 
-class WorkComponent extends React.Component<WorkProps> {
+class WorkComponent extends React.Component<Props> {
 
     public render() {
         const { classes } = this.props;
