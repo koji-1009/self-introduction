@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/self-introduction-react/static/css/main.3e545749.chunk.css",
-    "main.js": "/self-introduction-react/static/js/main.5e7fff8c.chunk.js",
-    "main.js.map": "/self-introduction-react/static/js/main.5e7fff8c.chunk.js.map",
+    "main.js": "/self-introduction-react/static/js/main.a696bfd3.chunk.js",
+    "main.js.map": "/self-introduction-react/static/js/main.a696bfd3.chunk.js.map",
     "runtime~main.js": "/self-introduction-react/static/js/runtime~main.05c3a597.js",
     "runtime~main.js.map": "/self-introduction-react/static/js/runtime~main.05c3a597.js.map",
-    "static/js/2.9477be35.chunk.js": "/self-introduction-react/static/js/2.9477be35.chunk.js",
-    "static/js/2.9477be35.chunk.js.map": "/self-introduction-react/static/js/2.9477be35.chunk.js.map",
+    "static/js/2.8c92ac81.chunk.js": "/self-introduction-react/static/js/2.8c92ac81.chunk.js",
+    "static/js/2.8c92ac81.chunk.js.map": "/self-introduction-react/static/js/2.8c92ac81.chunk.js.map",
     "index.html": "/self-introduction-react/index.html",
-    "precache-manifest.d8e424141c7533e596b77e1dcca716c7.js": "/self-introduction-react/precache-manifest.d8e424141c7533e596b77e1dcca716c7.js",
+    "precache-manifest.46130bd0b2ef430e57025dfab36ae3b7.js": "/self-introduction-react/precache-manifest.46130bd0b2ef430e57025dfab36ae3b7.js",
     "service-worker.js": "/self-introduction-react/service-worker.js",
-    "static/css/main.3e545749.chunk.css.map": "/self-introduction-react/static/css/main.3e545749.chunk.css.map",
-    "static/media/logo.svg": "/self-introduction-react/static/media/logo.5d5d9eef.svg"
+    "static/css/main.3e545749.chunk.css.map": "/self-introduction-react/static/css/main.3e545749.chunk.css.map"
   }
 }
