@@ -119,7 +119,7 @@ class App extends React.Component<Props> {
     return (
       <div className={classes.root} >
         <BrowserRouter
-          basename={"self-introduction-react"}
+          basename={"self-introduction-react/"}
         >
           <CssBaseline />
           <AppBar className={classNames(classes.appBar, this.state.open && classes.appBarShift)} >
