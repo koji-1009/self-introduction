@@ -3,6 +3,7 @@ import React from "react";
 import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import withStyles, { WithStyles, StyleRules } from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
+import { Box } from "@material-ui/core";
 
 const styles = (theme: Theme): StyleRules => createStyles({
 });
@@ -13,9 +14,8 @@ interface Props extends WithStyles<typeof styles> {
 class WorkComponent extends React.Component<Props> {
 
     public render() {
-        const { classes } = this.props;
         return (
-            <div className={classes.root}>
+            <Box component="span">
                 <ul>
                     <li>Play Stored Application <a href="https://play.google.com/store/apps/developer?id=Koji+Wakamiya&hl=ja" target="_blank" rel="noopener noreferrer">Store</a>
                         <ul>
@@ -35,7 +35,7 @@ class WorkComponent extends React.Component<Props> {
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </Box>
         );
     }
 }

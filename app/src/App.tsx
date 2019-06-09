@@ -137,7 +137,7 @@ class App extends React.Component<Props> {
               </IconButton>
               <Typography
                 component="h1"
-                variant="h5"
+                variant="h4"
                 color="inherit"
                 noWrap
                 className={classes.title}
