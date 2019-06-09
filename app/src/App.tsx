@@ -23,8 +23,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
+import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
 
 import WorkComponent from './components/WorksComponent'
 import ProfileComponent from './components/ProfileComponent';
@@ -163,7 +163,7 @@ class App extends React.Component<Props> {
               <Link to="/home">
                 <ListItem button>
                   <ListItemIcon>
-                    <DashboardIcon />
+                    <PermIdentityOutlinedIcon />
                   </ListItemIcon>
                   <ListItemText primary="Profile" />
                 </ListItem>
@@ -171,7 +171,7 @@ class App extends React.Component<Props> {
               <Link to="/work">
                 <ListItem button>
                   <ListItemIcon>
-                    <ShoppingCartIcon />
+                    <WorkOutlineOutlinedIcon />
                   </ListItemIcon>
                   <ListItemText primary="Work" />
                 </ListItem>
