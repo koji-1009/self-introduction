@@ -27,11 +27,11 @@ class ProfileComponent extends React.Component<Props> {
                     <Paper square={true}>
                         <Typography variant="subtitle1">Android</Typography>
                         <ul>
-                            <li>Java/Kotlin</li>
+                            <li>Java, Kotlin</li>
                             <li>Kotlin Coroutines</li>
                             <li>Android DataBinding</li>
                             <li>Android Archiecture Component</li>
-                            <li>RxJava/RxKotlin/RxAndroid</li>
+                            <li>RxJava, RxKotlin, RxAndroid</li>
                         </ul>
                     </Paper>
                 </Grid>
