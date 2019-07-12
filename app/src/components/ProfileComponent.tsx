@@ -3,7 +3,7 @@ import React from "react";
 import { Theme } from "@material-ui/core/styles/createMuiTheme";
 import withStyles, { WithStyles, StyleRules } from "@material-ui/core/styles/withStyles";
 import createStyles from "@material-ui/core/styles/createStyles";
-import { Box, Grid, Paper, Typography } from "@material-ui/core";
+import { Box, Grid, Paper, Typography, List, ListItem } from "@material-ui/core";
 
 const styles = (theme: Theme): StyleRules => createStyles({
 });
@@ -26,22 +26,22 @@ class ProfileComponent extends React.Component<Props> {
                 <Grid item xs={6}>
                     <Paper square={true}>
                         <Typography variant="subtitle1">Android</Typography>
-                        <ul>
-                            <li>Java, Kotlin</li>
-                            <li>Kotlin Coroutines</li>
-                            <li>Android DataBinding</li>
-                            <li>Android Archiecture Component</li>
-                            <li>RxJava, RxKotlin, RxAndroid</li>
-                        </ul>
+                        <List>
+                            <ListItem><Typography variant="inherit">Java, Kotlin</Typography></ListItem>
+                            <ListItem><Typography variant="inherit">Kotlin Coroutines</Typography></ListItem>
+                            <ListItem><Typography variant="inherit">Android DataBinding</Typography></ListItem>
+                            <ListItem><Typography variant="inherit">Android Archiecture Component</Typography></ListItem>
+                            <ListItem><Typography variant="inherit">RxJava, RxKotlin, RxAndroid</Typography></ListItem>
+                        </List>
                     </Paper>
                 </Grid>
                 <Grid item xs={6}>
                     <Paper square={true}>
                         <Typography variant="subtitle1">CI</Typography>
-                        <ul>
-                            <li>CircleCI</li>
-                            <li>Bitrise</li>
-                        </ul>
+                        <List>
+                            <ListItem><Typography variant="inherit">CircleCI</Typography></ListItem>
+                            <ListItem><Typography variant="inherit">Bitrise</Typography></ListItem>
+                        </List>
                     </Paper>
                 </Grid>
 
