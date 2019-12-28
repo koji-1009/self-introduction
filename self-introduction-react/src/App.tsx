@@ -3,7 +3,10 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
+import WhoAmI from './WhoAmI';
+import Skills from './Skills';
+import Works from './Works';
+import Links from './Links';
 
 function Copyright() {
   return (
@@ -20,12 +23,16 @@ function Copyright() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v4-beta example with TypeScript
+        <Typography variant="h3" component="h1" gutterBottom>
+          Self Introduction
         </Typography>
-        <ProTip />
+
+        <WhoAmI />
+        <Skills />
+        <Works />
+        <Links />
         <Copyright />
       </Box>
     </Container>
