@@ -56,7 +56,7 @@ export default function Skills() {
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel>
-            <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" >
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" >
                     <Typography>iOS Application</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
@@ -76,7 +76,7 @@ export default function Skills() {
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel>
-            <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" >
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header" >
                     <Typography>Web</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
