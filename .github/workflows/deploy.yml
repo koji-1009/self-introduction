@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
     env:
@@ -34,8 +34,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Deploy
+      - name: Build pages
         run: |
           yarn install --frozen
-          yarn deploy
+          yarn build
         working-directory: ${{ env.working-directory }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ env.working-directory }}/public
