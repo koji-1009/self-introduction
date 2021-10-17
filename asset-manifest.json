@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/self-introduction-react/static/js/main.e05426f8.chunk.js",
-    "main.js.map": "/self-introduction-react/static/js/main.e05426f8.chunk.js.map",
-    "runtime-main.js": "/self-introduction-react/static/js/runtime-main.9d35999f.js",
-    "runtime-main.js.map": "/self-introduction-react/static/js/runtime-main.9d35999f.js.map",
-    "static/js/2.46c2a28b.chunk.js": "/self-introduction-react/static/js/2.46c2a28b.chunk.js",
-    "static/js/2.46c2a28b.chunk.js.map": "/self-introduction-react/static/js/2.46c2a28b.chunk.js.map",
+    "main.js": "/self-introduction-react/static/js/main.d4f392c0.chunk.js",
+    "main.js.map": "/self-introduction-react/static/js/main.d4f392c0.chunk.js.map",
+    "runtime-main.js": "/self-introduction-react/static/js/runtime-main.b649273f.js",
+    "runtime-main.js.map": "/self-introduction-react/static/js/runtime-main.b649273f.js.map",
+    "static/js/2.cd29dc3b.chunk.js": "/self-introduction-react/static/js/2.cd29dc3b.chunk.js",
+    "static/js/2.cd29dc3b.chunk.js.map": "/self-introduction-react/static/js/2.cd29dc3b.chunk.js.map",
     "index.html": "/self-introduction-react/index.html",
-    "static/js/2.46c2a28b.chunk.js.LICENSE.txt": "/self-introduction-react/static/js/2.46c2a28b.chunk.js.LICENSE.txt"
+    "static/js/2.cd29dc3b.chunk.js.LICENSE.txt": "/self-introduction-react/static/js/2.cd29dc3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d35999f.js",
-    "static/js/2.46c2a28b.chunk.js",
-    "static/js/main.e05426f8.chunk.js"
+    "static/js/runtime-main.b649273f.js",
+    "static/js/2.cd29dc3b.chunk.js",
+    "static/js/main.d4f392c0.chunk.js"
   ]
 }
