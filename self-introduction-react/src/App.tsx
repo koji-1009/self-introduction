@@ -1,10 +1,10 @@
-import { WhoAmI } from './WhoAmI'
-import { Skills } from './Skills'
-import { Works } from './Works'
-import { Links } from './Links'
+import { WhoAmI } from './widget/WhoAmI'
+import { Skills } from './widget/Skills'
+import { Works } from './widget/Works'
+import { Links } from './widget/Links'
 import { Box, Container, Link, Typography } from '@mui/material'
 
-function Copyright (): JSX.Element {
+function Copyright(): JSX.Element {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
@@ -17,7 +17,7 @@ function Copyright (): JSX.Element {
   )
 }
 
-export default function App (): JSX.Element {
+function App() {
   return (
     <Container maxWidth="md">
       <Box my={4}>
@@ -32,5 +32,7 @@ export default function App (): JSX.Element {
         <Copyright />
       </Box>
     </Container>
-  )
+  );
 }
+
+export default App;

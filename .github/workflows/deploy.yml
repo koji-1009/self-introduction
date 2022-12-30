@@ -22,13 +22,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-          cache-dependency-path: '**/yarn.lock'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
 
       - name: Build pages
         run: |
-          yarn install --frozen
-          yarn build
+          npm ci
+          npm run build
         working-directory: ${{ env.working-directory }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

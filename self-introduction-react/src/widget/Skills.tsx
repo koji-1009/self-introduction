@@ -11,7 +11,7 @@ import {
   AccordionDetails
 } from '@mui/material'
 
-export function Skills (): JSX.Element {
+export function Skills(): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>

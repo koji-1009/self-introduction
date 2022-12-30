@@ -1,6 +1,6 @@
 import { List, ListItem, Typography, Link } from '@mui/material'
 
-export function Links (): JSX.Element {
+export function Links(): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>
