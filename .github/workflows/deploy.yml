@@ -10,11 +10,11 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      working-directory: ./self-introduction-react
+      working-directory: 'self-introduction-react'
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [18]
 
     steps:
       - uses: actions/checkout@v3
@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
 
       - name: Build pages
         run: |
