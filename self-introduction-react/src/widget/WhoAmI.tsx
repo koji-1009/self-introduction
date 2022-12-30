@@ -7,7 +7,7 @@ import {
   Typography
 } from '@mui/material'
 
-export function WhoAmI (): JSX.Element {
+export function WhoAmI(): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>

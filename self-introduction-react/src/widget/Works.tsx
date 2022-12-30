@@ -9,7 +9,7 @@ import {
   AccordionDetails
 } from '@mui/material'
 
-export function Works (): JSX.Element {
+export function Works(): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>
