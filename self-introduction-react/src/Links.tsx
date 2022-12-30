@@ -1,6 +1,6 @@
-import { List, ListItem, Typography, Link } from "@material-ui/core";
+import { List, ListItem, Typography, Link } from '@mui/material'
 
-export default function Links() {
+export function Links (): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>
@@ -16,5 +16,5 @@ export default function Links() {
         <Link href="https://twitter.com/D_R_1009">Twitter</Link>
       </ListItem>
     </List>
-  );
+  )
 }

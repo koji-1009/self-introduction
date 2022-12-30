@@ -1,30 +1,30 @@
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import {
   List,
-  Typography,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
   Grid,
   Link,
-} from "@material-ui/core";
+  Typography,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
+} from '@mui/material'
 
-export default function Works() {
+export function Works (): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>
         Works
       </Typography>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
+      <Accordion>
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography>Full time</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Grid container direction="column" justify="center" spacing={1}>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Grid container direction="column" justifyContent={'center'} spacing={1}>
             <Typography variant="subtitle1">Studyplus</Typography>
             <Typography>2020.06 ~ now : Flutter application</Typography>
             <Grid item>
@@ -58,24 +58,24 @@ export default function Works() {
               <Typography>2015.04 ~ 2016.10 : Android application</Typography>
             </Grid>
           </Grid>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography>Second job</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Grid container direction="column" justify="center" spacing={1}>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Grid container direction="column" justifyContent={'center'} spacing={1}>
             <Grid item>
               <Typography>2019.06~2019.07 : Android application</Typography>
             </Grid>
           </Grid>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
     </List>
-  );
+  )
 }

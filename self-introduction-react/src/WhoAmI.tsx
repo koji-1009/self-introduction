@@ -4,10 +4,10 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Typography,
-} from "@material-ui/core";
+  Typography
+} from '@mui/material'
 
-export default function WhoAmI() {
+export function WhoAmI (): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>
@@ -26,5 +26,5 @@ export default function WhoAmI() {
         />
       </ListItem>
     </List>
-  );
+  )
 }

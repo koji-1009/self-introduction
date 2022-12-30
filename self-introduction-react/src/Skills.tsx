@@ -1,34 +1,34 @@
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import {
   List,
-  ExpansionPanel,
-  ExpansionPanelSummary,
-  ExpansionPanelDetails,
   ListItem,
   ListItemText,
   Grid,
   Link,
   Typography,
-} from "@material-ui/core";
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
+} from '@mui/material'
 
-export default function Skills() {
+export function Skills (): JSX.Element {
   return (
     <List>
       <Typography variant="h4" component="h2" gutterBottom>
         Skills
       </Typography>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
+      <Accordion>
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography>Flutter Application</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        </AccordionSummary>
+        <AccordionDetails>
           <List>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Skills</Typography>
                 <ListItem>
                   <ListItemText primary="RxStream" />
@@ -42,7 +42,7 @@ export default function Skills() {
               </Grid>
             </ListItem>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Application</Typography>
                 <Grid item>
                   <Link href="https://github.com/koji-1009/color_bg">
@@ -57,7 +57,7 @@ export default function Skills() {
               </Grid>
             </ListItem>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Library</Typography>
                 <Grid item>
                   <Link href="https://github.com/koji-1009/flutter_auth_ui">
@@ -67,20 +67,20 @@ export default function Skills() {
               </Grid>
             </ListItem>
           </List>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography>Android Application</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        </AccordionSummary>
+        <AccordionDetails>
           <List>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Skills</Typography>
                 <ListItem>
                   <ListItemText primary="Java 7, 8 + RxJava" />
@@ -94,7 +94,7 @@ export default function Skills() {
               </Grid>
             </ListItem>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Library</Typography>
                 <Grid item>
                   <Link href="https://github.com/koji-1009/EmptyRecyclerView">
@@ -124,7 +124,7 @@ export default function Skills() {
               </Grid>
             </ListItem>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Apps</Typography>
                 <Grid item>
                   <Link href="https://play.google.com/store/apps/details?id=com.app.dr1009.qrshot">
@@ -144,20 +144,20 @@ export default function Skills() {
               </Grid>
             </ListItem>
           </List>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
-      <ExpansionPanel>
-        <ExpansionPanelSummary
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography>iOS Application</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
+        </AccordionSummary>
+        <AccordionDetails>
           <List>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Skills</Typography>
                 <Grid item>
                   <ListItemText primary="Swift" />
@@ -165,7 +165,7 @@ export default function Skills() {
               </Grid>
             </ListItem>
             <ListItem>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justifyContent={'center'} spacing={1}>
                 <Typography variant="subtitle1">Apps</Typography>
                 <Grid item>
                   <Typography>Kaede50(closed)</Typography>
@@ -173,8 +173,8 @@ export default function Skills() {
               </Grid>
             </ListItem>
           </List>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+        </AccordionDetails>
+      </Accordion>
     </List>
-  );
+  )
 }

@@ -1,26 +1,23 @@
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Link from "@material-ui/core/Link";
-import WhoAmI from "./WhoAmI";
-import Skills from "./Skills";
-import Works from "./Works";
-import Links from "./Links";
+import { WhoAmI } from './WhoAmI'
+import { Skills } from './Skills'
+import { Works } from './Works'
+import { Links } from './Links'
+import { Box, Container, Link, Typography } from '@mui/material'
 
-function Copyright() {
+function Copyright (): JSX.Element {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
+      {'Copyright © '}
       <Link color="inherit" href="https://github.com/koji-1009">
         Koji Wakamiya
-      </Link>{" "}
+      </Link>{' '}
       {new Date().getFullYear()}
-      {"."}
+      {'.'}
     </Typography>
-  );
+  )
 }
 
-export default function App() {
+export default function App (): JSX.Element {
   return (
     <Container maxWidth="md">
       <Box my={4}>
@@ -35,5 +32,5 @@ export default function App() {
         <Copyright />
       </Box>
     </Container>
-  );
+  )
 }
